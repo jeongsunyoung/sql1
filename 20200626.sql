@@ -268,7 +268,7 @@ emp 테이블에서 10번 부서(deptno) 혹은 30번 부서에 속하는 사람
 급여(sal)가 1500이 넘는 사람들만 조회하고 이름으로 내림차순
 SELECT *
 FROM emp
-WHERE (deptno = 10 OR deptno = 30) 
+WHERE deptno IN (10, 30) 
   AND sal > 1500
 ORDER BY ename DESC; 
 

@@ -220,6 +220,9 @@ FROM emp e JOIN emp m ON ( e.mgr = m.empno );    --사원번호 가져올 곳 e,
 사원중 사원의 번호가 7369~7698인 사원만 대상으로 해당 사원의
 사원번호, 이름, 상사의 사원번호, 상사의 이름
 
+SELECT *
+FROM emp;
+
 SELECT e.empno, e.ename, e.mgr, m.ename
 FROM emp e JOIN emp m ON ( e.mgr = m.empno )
 WHERE e.empno BETWEEN 7369 AND 7698;

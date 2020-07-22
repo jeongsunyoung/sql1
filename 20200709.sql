@@ -363,12 +363,12 @@ SELECT *
 FROM dept;
 
 deptno가 90, dname이 ddit, loc가 대전인 데이터를 dept 테이블에 입력하는 쿼리 작성
-INSERT INTO dept VALUES (9, 'ddit', '대전');
+INSERT INTO dept VALUES (90, 'ddit', '대전');
 
 부서번호가 90번인 부서의 부서명을 '대덕it', 위치정보(loc)를 'daejeon'으로 업데이트
 UPDATE dept SET dname = '대덕it',
                 loc = 'daejeon'
-WHERE deptno = 9;
+WHERE deptno = 90;
 
 업데이트 쿼리를 작성할 때 주의점
 1. WHERE절이 있는지 없는지 확인!!
